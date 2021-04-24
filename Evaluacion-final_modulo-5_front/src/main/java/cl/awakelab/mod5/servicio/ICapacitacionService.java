@@ -1,4 +1,4 @@
-package cl.awakelab.mod5.dao;
+package cl.awakelab.mod5.servicio;
 
 import java.util.List;
 

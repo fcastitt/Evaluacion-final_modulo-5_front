@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import cl.awakelab.mod5.controladores.Capacitacion;
-import cl.awakelab.mod5.dao.ICapacitacionService;
 import cl.awakelab.mod5.dto.CapacitacionModelo;
+import cl.awakelab.mod5.servicio.ICapacitacionService;
 
 
 @Controller
