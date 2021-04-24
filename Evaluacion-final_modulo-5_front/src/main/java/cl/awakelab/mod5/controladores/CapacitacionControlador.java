@@ -21,7 +21,7 @@ import cl.awakelab.mod5.servicio.InterfasServicios;
 public class CapacitacionControlador {
 	
 	@Autowired
-	InterfasServicios<CapacitacionControlador> capService;
+	InterfasServicios<Capacitacion> capService;
 	
 	org.slf4j.Logger consola = LoggerFactory.getLogger(CapacitacionControlador.class);
 
@@ -32,7 +32,7 @@ public class CapacitacionControlador {
 	}
 	
 	@PostMapping ("/crearCapacitacion")
-	public String crearCapacitacion(@ModelAttribute("FormCrearCapacitacion") CapacitacionControlador nuevaCapacitacion) { 
+	public String crearCapacitacion(@ModelAttribute("FormCrearCapacitacion") Capacitacion nuevaCapacitacion) { 
 		
 		capService.crear(nuevaCapacitacion);
 	
@@ -45,7 +45,7 @@ public class CapacitacionControlador {
 	@GetMapping("/listarCapacitacion")
 	public String ejecutalistarcap(ModelMap mostrar) {
 		
-		List<CapacitacionControlador> listarCapacitacion = capService.listar();
+		List<Capacitacion> listarCapacitacion = capService.listar();
 		
 		mostrar.put("listaCapacitacion" , listarCapacitacion);
 		
