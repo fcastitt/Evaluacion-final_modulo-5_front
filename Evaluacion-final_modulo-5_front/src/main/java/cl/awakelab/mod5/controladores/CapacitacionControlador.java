@@ -2,6 +2,7 @@ package cl.awakelab.mod5.controladores;
 
 import java.util.List;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,7 +24,7 @@ public class CapacitacionControlador {
 	@Autowired
 	InterfasServicios<Capacitacion> capService;
 	
-	org.slf4j.Logger consola = LoggerFactory.getLogger(CapacitacionControlador.class);
+	private static final Logger consola = LoggerFactory.getLogger(CapacitacionControlador.class);
 
 
 	@GetMapping("/crearCapacitacion")
