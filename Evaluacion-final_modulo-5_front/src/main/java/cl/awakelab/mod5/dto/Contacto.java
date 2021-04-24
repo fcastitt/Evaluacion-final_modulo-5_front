@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-public class ContactoModelo {
+public class Contacto {
 
 	private String nomContacto;
 	private String mailContacto;

@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-public class PagoModelo {
+public class Pago {
 
 	private Integer PagMonto;
 	private String PagMes;

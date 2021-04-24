@@ -10,7 +10,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-public class UsuariosModelo {
+public class Usuarios {
 
 	private String uRun;
 	private String usuNombre;
