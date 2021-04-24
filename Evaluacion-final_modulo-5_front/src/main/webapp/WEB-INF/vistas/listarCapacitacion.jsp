@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<%@page import="cl.awakelab.mod5.dto.CapacitacionModelo"%>
+<%@page import="cl.awakelab.mod5.dto.Capacitacion"%>
 
 <%@page import="java.util.List"%>
 

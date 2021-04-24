@@ -11,19 +11,19 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cl.awakelab.mod5.controladores.Capacitacion;
-import cl.awakelab.mod5.dto.CapacitacionModelo;
-import cl.awakelab.mod5.servicio.InterfazServiciosLCBMBid;
+import cl.awakelab.mod5.controladores.CapacitacionControlador;
+import cl.awakelab.mod5.dto.Capacitacion;
+import cl.awakelab.mod5.servicio.InterfasServicios;
 
 
 @Controller
 @RequestMapping("/capacitacion")
-public class Capacitacion {
+public class CapacitacionControlador {
 	
 	@Autowired
-	InterfazServiciosLCBMBid capService;
+	InterfasServicios<CapacitacionControlador> capService;
 	
-	org.slf4j.Logger consola = LoggerFactory.getLogger(Capacitacion.class);
+	org.slf4j.Logger consola = LoggerFactory.getLogger(CapacitacionControlador.class);
 
 
 	@GetMapping("/crearCapacitacion")
@@ -32,9 +32,9 @@ public class Capacitacion {
 	}
 	
 	@PostMapping ("/crearCapacitacion")
-	public String crearCapacitacion(@ModelAttribute("FormCrearCapacitacion") CapacitacionModelo nuevaCapacitacion) { 
+	public String crearCapacitacion(@ModelAttribute("FormCrearCapacitacion") CapacitacionControlador nuevaCapacitacion) { 
 		
-		capService.crearCapacitacion(nuevaCapacitacion);
+		capService.crear(nuevaCapacitacion);
 	
 		consola.info("-------SE HA CREADO UNA NUEVA CAPACITACION----");
 		
@@ -45,7 +45,7 @@ public class Capacitacion {
 	@GetMapping("/listarCapacitacion")
 	public String ejecutalistarcap(ModelMap mostrar) {
 		
-		List<CapacitacionModelo> listarCapacitacion = capService.obtenerCapacitacion();
+		List<CapacitacionControlador> listarCapacitacion = capService.listar();
 		
 		mostrar.put("listaCapacitacion" , listarCapacitacion);
 		

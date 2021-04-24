@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-public class CapacitacionModelo {
+public class Capacitacion {
 
 	private String idCapacitacion;
 	private String capFecha;

@@ -4,37 +4,37 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import cl.awakelab.mod5.dto.CapacitacionModelo;
+import cl.awakelab.mod5.dto.Capacitacion;
 
 @Service
-public class CapacitacionImp implements InterfasServicios<CapacitacionModelo> {
+public class CapacitacionImp implements InterfasServicios<Capacitacion> {
 
 	@Override
-	public List<CapacitacionModelo> listar() {
+	public List<Capacitacion> listar() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public CapacitacionModelo crear(CapacitacionModelo dato) {
+	public Capacitacion crear(Capacitacion dato) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void borrar(CapacitacionModelo dato) {
+	public void borrar(Capacitacion dato) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public CapacitacionModelo modificar(CapacitacionModelo dato) {
+	public Capacitacion modificar(Capacitacion dato) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public CapacitacionModelo buscarPorId(String runUsuario) {
+	public Capacitacion buscarPorId(String runUsuario) {
 		// TODO Auto-generated method stub
 		return null;
 	}
