@@ -15,12 +15,7 @@ public class UsuariosControlador {
 		
 		@PostMapping("/crearUsuario")
 		public String crearUsuario() { 
-			
-			
 			return "crearUsuario" ;
-			
-			
-		
 		}
 			
 		@GetMapping("/listadoUsuario")

@@ -8,7 +8,6 @@ public class VisitasControlador {
 		
 		@GetMapping("/listadoVisitas")
 		public String ejecutarVisitas() {
-			
 			return "listadoVisitas" ;
 		}
 	}

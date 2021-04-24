@@ -15,7 +15,6 @@ public class PagosControlador {
 	@PostMapping("/crearPago")
 	public String crearPago() { 
 		return "crearPago" ;
-	
 	}
 		
 	@GetMapping("/listadoPago")
