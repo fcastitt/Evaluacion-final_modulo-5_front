@@ -1,4 +1,4 @@
-package com.springmvc.modulo5.dao;
+package cl.awakelab.mod5.dao;
 
 import java.util.ArrayList;
 import java.util.List;

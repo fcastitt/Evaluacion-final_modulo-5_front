@@ -1,4 +1,4 @@
-package cl.awakelab.crud.controladores;
+package cl.awakelab.mod5.controladores;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cl.awakelab.crud.controladores.Capacitacion;
-import cl.awakelab.crud.dao.ICapacitacionService;
-import cl.awakelab.crud.modelo.CapacitacionModelo;
+import cl.awakelab.mod5.controladores.Capacitacion;
+import cl.awakelab.mod5.dao.ICapacitacionService;
+import cl.awakelab.mod5.dto.CapacitacionModelo;
 
 
 @Controller

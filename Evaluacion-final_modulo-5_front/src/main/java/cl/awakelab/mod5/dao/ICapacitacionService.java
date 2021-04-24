@@ -1,8 +1,8 @@
-package cl.awakelab.crud.dao;
+package cl.awakelab.mod5.dao;
 
 import java.util.List;
 
-import cl.awakelab.crud.modelo.CapacitacionModelo;
+import cl.awakelab.mod5.dto.CapacitacionModelo;
 
 
 public interface ICapacitacionService {

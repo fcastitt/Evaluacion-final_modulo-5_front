@@ -1,4 +1,4 @@
-package cl.awakelab.crud.modelo;
+package cl.awakelab.mod5.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
