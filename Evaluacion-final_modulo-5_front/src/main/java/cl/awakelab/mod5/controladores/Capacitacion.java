@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import cl.awakelab.mod5.controladores.Capacitacion;
 import cl.awakelab.mod5.dto.CapacitacionModelo;
-import cl.awakelab.mod5.servicio.ICapacitacionService;
+import cl.awakelab.mod5.servicio.InterfazServiciosLCBMBid;
 
 
 @Controller
@@ -21,7 +21,7 @@ import cl.awakelab.mod5.servicio.ICapacitacionService;
 public class Capacitacion {
 	
 	@Autowired
-	ICapacitacionService capService;
+	InterfazServiciosLCBMBid capService;
 	
 	org.slf4j.Logger consola = LoggerFactory.getLogger(Capacitacion.class);
 
