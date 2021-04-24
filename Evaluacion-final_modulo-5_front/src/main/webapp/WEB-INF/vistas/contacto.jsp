@@ -37,7 +37,7 @@
     	
     </div>
 
-	<h1 class="centrar"> CONTACTO</h1>
+	<h1 class="centrar"> CONTACTO blablabla </h1>
 	
 	
 	<form class="formulario" action="" method="" id="formContacto">
