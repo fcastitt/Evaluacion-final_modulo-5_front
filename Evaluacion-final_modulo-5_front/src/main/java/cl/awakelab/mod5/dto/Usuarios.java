@@ -19,5 +19,6 @@ public class Usuarios {
 	private String usuApellido;
 	private String usuFechaNacimiento;
 	private String usTipo;
+	private String password;
 	
 }
