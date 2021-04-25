@@ -13,7 +13,7 @@ import lombok.ToString;
 @NoArgsConstructor
 public class Administrativo {
 
-	private Integer adRut;
+	private String adRut;
 	private String adNombre;
 	private String adApellido;
 	private String adCorreo;

@@ -26,7 +26,7 @@
         <jsp:include page="menu/menu.jsp"></jsp:include>
     </div>
 		
-		<h1 class="centrar">INICIO esto es una P R U E B A </h1>
+		<h1 class="centrar">INICIO</h1>
 		<div class="contenido">
 
 			<h2>¿Cuál es el objetivo del sistema de información?</h2>

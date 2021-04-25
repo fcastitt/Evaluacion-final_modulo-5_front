@@ -13,12 +13,12 @@ import lombok.ToString;
 @NoArgsConstructor
 public class Profesional {
 
-	private Integer proRut;
+	private String proRut;
 	private String proNombre;
 	private String proApellido;
 	private String proTelefono;
 	private String proTitulo;
 	private String proProyecto;
-	private Integer usuariosURun;
+	private String usuariosURun;
 	
 }

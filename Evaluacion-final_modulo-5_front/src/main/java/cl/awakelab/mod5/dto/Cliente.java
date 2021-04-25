@@ -13,7 +13,7 @@ import lombok.ToString;
 @NoArgsConstructor
 public class Cliente {
 
-	private Integer rutCliente;
+	private String rutCliente;
 	private String cliNombres;
 	private String cliApellidos;
 	private String cliTelefono;
@@ -21,6 +21,6 @@ public class Cliente {
 	private String cliSistemaSalud;
 	private String cliDireccion;
 	private String cliComuna;
-	private String cliEdad;
-	private Integer usuariosURun;
+	private Integer cliEdad;
+	private String usuariosURun;
 }

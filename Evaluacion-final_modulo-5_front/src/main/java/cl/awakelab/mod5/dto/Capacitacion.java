@@ -18,6 +18,6 @@ public class Capacitacion {
 	private String capHora;
 	private String capLugar;
 	private Integer capDuracion;
-	private Integer clienteRutCliente;
+	private String clienteRutCliente;
 	
 }
