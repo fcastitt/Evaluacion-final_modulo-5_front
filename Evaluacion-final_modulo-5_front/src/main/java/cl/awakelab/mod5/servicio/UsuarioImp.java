@@ -53,10 +53,10 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 	@Override
 	public Usuarios buscarPorId(String runUsuario) {
 	
-		Map<String, String> maparun = new HashMap<String, String>();
-		maparun.put("idUsuario", runUsuario);
+		//Map<String, String> maparun = new HashMap<String, String>();
+		//maparun.put("idUsuario", runUsuario);
 		
-		ResponseEntity<Usuarios> responseUsuario = restTemp.getForEntity(APIBUSCARPORRUN, Usuarios.class, maparun);
+		//ResponseEntity<Usuarios> responseUsuario = restTemp.getForEntity(APIBUSCARPORRUN, Usuarios.class, maparun);
 		
 		return null; //responseUsuario.getBody();
 	}
