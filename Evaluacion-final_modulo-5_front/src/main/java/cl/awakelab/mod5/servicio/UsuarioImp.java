@@ -49,6 +49,7 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 		return null;
 	}
 
+	
 	@Override
 	public Usuarios buscarPorId(String runUsuario) {
 	
