@@ -37,7 +37,7 @@
         <h1 class="centrar">CREAR USUARIO</h1>
 		
 		<!-- form -->
-		<form:form class="formulario" action="/administrativo/crearUsurario" 
+		<form:form class="formulario" action="/administrativo/crearUsuario" 
 		method="post" modelAttribute="FormCrearUsuario" id="formUs">
 		
 			<div class="">

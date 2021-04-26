@@ -46,12 +46,11 @@
             <thead>
             	<tr>
                 	<th>Rut Usuario</th>
+                	<th>Password</th>
                     <th>Nombres</th>
                     <th>Apelidos</th>
                     <th>Fecha de Nacimiento</th>
                     <th>Tipo de usuario</th>
-                    <th>Eliminar</th>
-                    <th>Agregar</th>
                 </tr>
             </thead>
 
@@ -59,21 +58,11 @@
             	<c:forEach items="${claveListaUsuario}" var="listaUsuario">
 	                <tr>
 	                    <td><c:out value="${listaUsuario.getURun()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getUsuNombres()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getUusApellidos()}"></c:out></td>
+	                    <td><c:out value="${listaUsuario.getPassword()}"></c:out></td>
+	                    <td><c:out value="${listaUsuario.getUsuNombre()}"></c:out></td>
+	                    <td><c:out value="${listaUsuario.getUsuApellido()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getUsuFechaNacimiento()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getTipoUsuario()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getPassword()}"></c:out></td>
-	                    
-
-	                    <td>Cliente</td>
-	                        <td><a 	href=""><img 
-	                        		src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
-	    							width="30px"></a></td>
-	                        <td><a 	href="EditarUsuario?rut=5"><img
-	                                src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
-	                                width="30px"></a></td>
-	                </tr>
                </c:forEach> 
             </tbody>
            	<br>
