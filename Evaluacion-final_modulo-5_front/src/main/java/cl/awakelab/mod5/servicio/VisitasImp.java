@@ -28,9 +28,9 @@ public class VisitasImp implements InterfasServicios<Visitas> {
 			
 		HttpHeaders headers = new HttpHeaders();
 		
-		HttpEntity<Visitas> entityCapacitacion = new HttpEntity<Visitas>(headers);
+		HttpEntity<Visitas> entityVisitas = new HttpEntity<Visitas>(headers);
 		
-		ResponseEntity<List<Visitas>> responseUsuarios = restTemplate.exchange(APILISTARVISITAS, HttpMethod.GET, entityCapacitacion, new ParameterizedTypeReference<List<Visitas>>() {
+		ResponseEntity<List<Visitas>> responseUsuarios = restTemplate.exchange(APILISTARVISITAS, HttpMethod.GET, entityVisitas, new ParameterizedTypeReference<List<Visitas>>() {
 		});
 		
 		return responseUsuarios.getBody();
