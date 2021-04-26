@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.view.RedirectView;
 
 import cl.awakelab.mod5.dto.Usuarios;
@@ -41,9 +42,13 @@ public class UsuariosControlador {
 		return new RedirectView("/administrativo/listadoUsuario") ;
 	}	
 	
-		@GetMapping("/editarCliente")
-		public String ejecutarEditarCliente() {
-			return "editarCliente" ;
+		@GetMapping("/editar")
+		public String ejecutarEditarUsuario(@RequestParam("rut")String rutUsuario, ModelMap modelbuscar) {
+			
+			
+			modelbuscar.put("claveRutUsuario", usuarioService.buscarPorId(rutUsuario));
+			
+			return "editarUsuario" ;
 		}
 		
 		@GetMapping("/editarProfesional")
@@ -55,5 +60,15 @@ public class UsuariosControlador {
 		public String ejecutarEditarAdministrativo() {
 			return "editarAdministrativo" ;
 		}
+		
+		@GetMapping("/buscar")
+		public  String buscarUsuario(@RequestParam("rut")String rutUsuario, ModelMap modelbuscar) {
+			
+			modelbuscar.put("claveRutUsuario", usuarioService.buscarPorId(rutUsuario));
+			
+			
+			return  null;
+		}
+
 	
 }
