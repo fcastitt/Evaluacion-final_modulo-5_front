@@ -49,6 +49,7 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 		//String clave = bCPE.encode(dato.getPassword());
 		
 		//dato.setPassword(clave);
+		System.out.println("Entra a la implementacion");
 		
 		ResponseEntity<Usuarios> responseUsuario = restTemp.postForEntity(APICREARUSUARIO, dato, Usuarios.class);
 		

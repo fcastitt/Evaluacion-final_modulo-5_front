@@ -35,6 +35,7 @@ public class UsuariosControlador {
 	@PostMapping("/crearUsuario")
 	public RedirectView crearUsuario(@ModelAttribute ("FormCrearUsuario") Usuarios formulario) { 
 		
+		System.out.println("entra al controlador");
 		usuarioService.crear(formulario);
 		
 		return new RedirectView("/administrativo/listadoUsuario") ;

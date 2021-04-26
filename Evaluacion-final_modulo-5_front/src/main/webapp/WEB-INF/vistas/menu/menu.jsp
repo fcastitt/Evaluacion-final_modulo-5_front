@@ -37,7 +37,7 @@
 				<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="../administrativo/crearUsuario">Crear Usuario</a>
+          				<a class="dropdown-item" href="/administrativo/crearUsuario">Crear Usuario</a>
           				<a class="dropdown-item" href="/administrativo/listadoUsuario">Listado de Usuarios</a>
           				<div class="dropdown-divider"></div>
          				<a class="dropdown-item" href="editarCliente">Editar Cliente</a>

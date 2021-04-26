@@ -15,10 +15,11 @@ import lombok.ToString;
 public class Usuarios {
 
 	private String uRun;
+	private String password;
 	private String usuNombre;
 	private String usuApellido;
 	private String usuFechaNacimiento;
 	private String tipoUsuario;
-	private String password;
+	
 	
 }

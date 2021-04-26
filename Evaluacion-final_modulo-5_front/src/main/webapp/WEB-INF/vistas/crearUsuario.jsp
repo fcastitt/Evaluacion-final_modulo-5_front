@@ -37,10 +37,15 @@
         <h1 class="centrar">CREAR USUARIO</h1>
 		
 		<!-- form -->
-		<form:form class="formulario" action="../administrativo/crearUsurario" method="post" modelAttribute="FormCrearUsuario" id="formUs">
+		<form:form class="formulario" action="/administrativo/crearUsurario" 
+		method="post" modelAttribute="FormCrearUsuario" id="formUs">
 		
 			<div class="">
 				<input type="text" class="campos-form" id="uRun" name="uRun" placeholder="* Rut Usuario">
+			</div>
+			
+			<div class="">
+				<input type="password" class="campos-form" id="uRun" name="password" placeholder="* Password Usuario">
 			</div>
 			
 			<div class="">
