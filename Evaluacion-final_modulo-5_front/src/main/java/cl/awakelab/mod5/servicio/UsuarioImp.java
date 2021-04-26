@@ -18,8 +18,8 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 	@Autowired
 	RestTemplate restTemp;
 	
-	@Autowired
-	BCryptPasswordEncoder bCPE;
+	//@Autowired
+	//BCryptPasswordEncoder bCPE;
 	
 	@Override
 	public List<Usuarios> listar() {
