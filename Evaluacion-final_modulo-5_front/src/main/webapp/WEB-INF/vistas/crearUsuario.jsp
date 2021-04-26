@@ -37,7 +37,7 @@
         <h1 class="centrar">CREAR USUARIO</h1>
 		
 		<!-- form -->
-		<form:form class="formulario" action="/crearUsurario" method="post" modelAttribute="FormCrearUsuario" id="formUs">
+		<form:form class="formulario" action="../administrativo/crearUsurario" method="post" modelAttribute="FormCrearUsuario" id="formUs">
 		
 			<div class="">
 				<input type="text" class="campos-form" id="uRun" name="uRun" placeholder="* Rut Usuario">
@@ -68,6 +68,7 @@
 			<label for="" class=""> (*) Campos obligatorios</label></div>
 		</form:form>
 		
+		<!-- 
 		<div id="cliente" class="">
 		<form:form class="formulario" action="/crearUsurarioCliente" method="post" modelAttribute="FormUsCliente" id="FormUsCliente">
 			<h1 class="centrar">DATOS DE CLIENTE</h1>
@@ -144,7 +145,7 @@
 				<input class="submit" id="boton" type="submit" value="Enviar"></div>	
 		</form:form>
 		</div>
-
+		-->
 	
 	<!-- BootStrap -->
     <script
