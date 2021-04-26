@@ -20,7 +20,7 @@ import cl.awakelab.mod5.dto.Usuarios;
 @Service
 public class UsuarioImp implements InterfasServicios<Usuarios>{
 
-	private static final String APIUSUARIO2 = "http://localhost:8080/api/v1/usuarios";
+	private static final String APILISTARUSUARIO = "http://localhost:8080/api/v1/usuarios";
 	private static final String APICREARUSUARIO = "http://localhost:8080/api/v1/usuarios/crear";
 	private static final String APIBUSCARPORRUN = "http://localhost:8080/api/v1/usuarios/buscar/{idUsuario}";
 	
@@ -37,8 +37,7 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 		
 		HttpEntity<Usuarios> entityUsuario= new HttpEntity<Usuarios>(header);
 		
-		
-		ResponseEntity<List<Usuarios>> response = restTemp.exchange(APIBUSCARPORRUN, HttpMethod.GET,entityUsuario, new ParameterizedTypeReference<List<Usuarios>>() {
+		ResponseEntity<List<Usuarios>> response = restTemp.exchange(APILISTARUSUARIO, HttpMethod.GET,entityUsuario, new ParameterizedTypeReference<List<Usuarios>>() {
 		});
 		return response.getBody();
 	}
