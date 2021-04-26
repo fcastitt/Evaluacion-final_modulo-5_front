@@ -18,7 +18,7 @@ public class Usuarios {
 	private String usuNombre;
 	private String usuApellido;
 	private String usuFechaNacimiento;
-	private String usTipo;
+	private String tipoUsuario;
 	private String password;
 	
 }

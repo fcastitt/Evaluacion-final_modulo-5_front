@@ -23,12 +23,12 @@
 				<a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a></li>
 
 				<li class="nav-item">
-				<a class="nav-link" href="contacto">Contacto</a></li>
+				<a class="nav-link" href="/contacto/formulariocontacto">Contacto</a></li>
 					
 				<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capacitacion</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="crearCapacitacion">Crear Capacitacion</a>
+          				<a class="dropdown-item" href="/capacitacion/crearCapacitacion">Crear Capacitacion</a>
           				<div class="dropdown-divider"></div>
          				<a class="dropdown-item" href="listarCapacitacion">Listado de Capacitaciones</a>
         			</div>
@@ -37,8 +37,8 @@
 				<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="crearUsuario">Crear Usuario</a>
-          				<a class="dropdown-item" href="listadoUsuario">Listado de Usuarios</a>
+          				<a class="dropdown-item" href="/usuario/crearUsuario">Crear Usuario</a>
+          				<a class="dropdown-item" href="/usuario/listadoUsuario">Listado de Usuarios</a>
           				<div class="dropdown-divider"></div>
          				<a class="dropdown-item" href="editarCliente">Editar Cliente</a>
          				<a class="dropdown-item" href="editarProfesional">Editar Profesional</a>
