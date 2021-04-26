@@ -15,20 +15,21 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+
 import cl.awakelab.mod5.dto.Usuarios;
 
 @Service
 public class UsuarioImp implements InterfasServicios<Usuarios>{
 
-	private static final String APILISTARUSUARIO = "http://localhost:8080/api/v1/usuarios";
-	private static final String APICREARUSUARIO = "http://localhost:8080/api/v1/usuarios/crear";
-	private static final String APIBUSCARPORRUN = "http://localhost:8080/api/v1/usuarios/buscar/{idUsuario}";
+	private static final String APILISTARUSUARIO = "http://localhost:8889/api/v1/usuarios";
+	private static final String APICREARUSUARIO = "http://localhost:8889/api/v1/usuarios/crear";
+	private static final String APIBUSCARPORRUN = "http://localhost:8889/api/v1/usuarios/buscar/{idUsuario}";
 	
 	@Autowired
 	RestTemplate restTemp;
 	
 	//@Autowired
-	//BCryptPasswordEncoder bCPE;
+	//BCryptPasswordEn bCPE;
 	
 	@Override
 	public List<Usuarios> listar() {
@@ -44,7 +45,14 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 
 	@Override
 	public Usuarios crear(Usuarios dato) {
-		return null;
+		
+		//String clave = bCPE.encode(dato.getPassword());
+		
+		//dato.setPassword(clave);
+		
+		ResponseEntity<Usuarios> responseUsuario = restTemp.postForEntity(APICREARUSUARIO, dato, Usuarios.class);
+		
+		return responseUsuario.getBody();
 	}
 
 	@Override

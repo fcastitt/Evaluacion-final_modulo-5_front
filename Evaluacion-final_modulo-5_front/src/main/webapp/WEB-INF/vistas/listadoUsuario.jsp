@@ -37,7 +37,8 @@
     
     	<!-- TITULO PAGINA -->
     	<div class="centrar">
-        <h1>LISTADO DE USUARIOS</h1></div>
+        <h1>LISTADO DE USUARIOS</h1>
+        </div>
 
  		<!-- TABLA -->
     	<div class="container">
