@@ -66,6 +66,7 @@
 			<br>
 			<div class="">
 			<label for="" class=""> (*) Campos obligatorios</label></div>
+			<input class="submit" id="boton" type="submit" value="Enviar">
 		</form:form>
 		
 		<!-- 
@@ -141,8 +142,7 @@
 			<div class="">
 				<label for="" class=""> (*) Campos obligatorios</label></div>	
 			<br>
-			<div class="">
-				<input class="submit" id="boton" type="submit" value="Enviar"></div>	
+	
 		</form:form>
 		</div>
 		-->
