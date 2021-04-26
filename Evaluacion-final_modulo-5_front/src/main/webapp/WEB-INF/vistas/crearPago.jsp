@@ -38,7 +38,7 @@
         <h1>CREAR PAGO</h1></div>
 		
 		<!-- form -->
-		<form:form class="formulario" action="/crearPago" method="post" modelAttribute="FormCrearPago" id="formPago">
+		<form:form class="formulario" action="/crearPago" method="post" modelAttribute="formCrearPago" id="formPago">
 		
 		<div class="">
 			<input type="number" class="campos-form" id="PagMonto" name="PagMonto" placeholder="* Monto del pago">
