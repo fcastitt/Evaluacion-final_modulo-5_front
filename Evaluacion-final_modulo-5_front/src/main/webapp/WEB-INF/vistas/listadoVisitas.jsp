@@ -52,12 +52,13 @@
             </thead>
             
             <tbody>
-            	<c:forEach items="${listaVisitas}" var="listaVisitas">
+            	<c:forEach items="${claveListaVisitas}" var="listaVisitas">
 	                <tr>
 	                    <td><c:out value="${listaUsuario.getIdVisita()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getVisFecha()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getVisHora()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getVisRut()}"></c:out></td>
+	                    <td><c:out value="${listaUsuario.getNombre()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getVisChequeo()}"></c:out></td>
 	                </tr>
                	</c:forEach> 
