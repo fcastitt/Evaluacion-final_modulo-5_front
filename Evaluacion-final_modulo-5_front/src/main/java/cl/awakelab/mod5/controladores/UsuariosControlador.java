@@ -41,8 +41,6 @@ public class UsuariosControlador {
 		return new RedirectView("/administrativo/listadoUsuario") ;
 	}	
 	
-	
-	
 		@GetMapping("/editarCliente")
 		public String ejecutarEditarCliente() {
 			return "editarCliente" ;

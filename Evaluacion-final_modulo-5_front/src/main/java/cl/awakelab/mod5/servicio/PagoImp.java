@@ -8,11 +8,12 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import cl.awakelab.mod5.dto.Pago;
-import cl.awakelab.mod5.dto.Usuarios;
 
+@Service
 public class PagoImp implements InterfasServicios<Pago> {
 	
 	private static final String APILISTARPAGOS = "http://localhost:8080/api/v1/pagos";
