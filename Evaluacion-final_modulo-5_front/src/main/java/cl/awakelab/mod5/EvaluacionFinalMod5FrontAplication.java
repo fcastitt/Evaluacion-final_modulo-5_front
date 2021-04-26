@@ -2,6 +2,8 @@ package cl.awakelab.mod5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class EvaluacionFinalMod5FrontAplication {
@@ -10,4 +12,8 @@ public class EvaluacionFinalMod5FrontAplication {
 		SpringApplication.run(EvaluacionFinalMod5FrontAplication.class, args);
 	}
 
+	@Bean
+	public RestTemplate restTemplate( ) {
+		return new RestTemplate();
+	}
 }
