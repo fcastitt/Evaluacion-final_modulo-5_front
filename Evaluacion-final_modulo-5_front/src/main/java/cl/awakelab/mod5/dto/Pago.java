@@ -13,9 +13,9 @@ import lombok.ToString;
 @ToString
 public class Pago {
 
-	private Integer PagMonto;
-	private String PagMes;
-	private Integer PagAño;
-	private String PagRut;
-	private String PagFecha;
+	private Integer pagMonto;
+	private String pagMes;
+	private Integer pagAño;
+	private String pagRut;
+	private String pagFecha;
 }
