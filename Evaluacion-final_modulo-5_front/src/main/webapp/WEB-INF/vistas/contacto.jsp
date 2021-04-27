@@ -1,6 +1,7 @@
 <%@ page 	language="java" 
 			contentType="text/html; charset=ISO-8859-1"
     		pageEncoding="ISO-8859-1"%>
+<%@ taglib 	prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
 <html>
@@ -40,7 +41,7 @@
 	<h1 class="centrar"> CONTACTO</h1>
 	
 	
-	<form class="formulario" action="" method="" id="formContacto">
+	<form:form class="formulario" modelAttribute="formContacto" action="/cliente/contacto" method="post" id="formContacto">
 
 		<div class="">
 			<input class="campos-form" type="text" id="nomContacto" name="nomContacto" placeholder="* Nombre">
@@ -67,12 +68,13 @@
 		</div>
 		<br>
 		<div class="">
-			<label for="" class=""> (*) Campos obligatorios</label></div>
+			<label for="" class=""> (*) Campos obligatorios</label>
+		</div>
 		<br>
 		<div class="">
-			<input class="submit" id="boton" type="submit" value="Enviar"></div>		
+			<input class="submit" id="boton" type="submit" value="Enviar">		
 		</div>
-	</form>
+	</form:form>
 
 	<!-- BootStrap -->
     <script

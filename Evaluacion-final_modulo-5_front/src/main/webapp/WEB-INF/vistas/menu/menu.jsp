@@ -23,7 +23,7 @@
 				<a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a></li>
 
 				<li class="nav-item">
-				<a class="nav-link" href="/contacto/formulariocontacto">Contacto</a></li>
+				<a class="nav-link" href="/cliente/contacto">Contacto</a></li>
 					
 				<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capacitacion</a>

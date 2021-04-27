@@ -11,24 +11,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import cl.awakelab.mod5.dto.Contacto;
 
 @Controller
-@RequestMapping("/contacto")
+@RequestMapping("/cliente")
 public class ContactoControlador {
 	
 private static final Logger log = LoggerFactory.getLogger("Log de contacto");
 	
-	@GetMapping("/formulariocontacto")
+	@GetMapping("/contacto")
 	public String contacto() {
 		return "/contacto";
 	}
 	
-	@PostMapping("/formulariocontacto")
+	@PostMapping("/contacto")
 	public String contactoPost(@ModelAttribute("formContacto")Contacto contacto) {
-		log.info("IFORMACION INGRESADA EN FORMULARIO DE CONTACTO");
+		log.info("IFORMACION DE FORMULARIO DE CONTACTO INGRESADA");
 		System.out.println("Nombre: "+contacto.getNomContacto());
 		System.out.println("Email: "+contacto.getMailContacto());
 		System.out.println("Telefono: "+contacto.getTelContacto());
 		System.out.println("Mensaje: "+contacto.getMenContacto());
 		System.out.println("Genero: "+contacto.getGenContacto());
-		return "contacto";
+		return "/contacto";
 	}
 }
