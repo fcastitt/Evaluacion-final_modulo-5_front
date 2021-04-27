@@ -63,9 +63,7 @@
                	 	</tr>
                </c:forEach> 
             </tbody>
- 			
- 			<br>
-        	
+ 		
         	<tfood>
 	        	<div>
 	           		<input 	type="button" onclick="location.href='crearPago;" value="Crear pago">
