@@ -1,6 +1,7 @@
 <%@ page 	language="java" 
 			contentType="text/html; charset=ISO-8859-1"
     		pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
 <html>
@@ -30,20 +31,18 @@
     
     	<!-- TITULO PAGINA -->
     	<div class="centrar">
-        <h1>CREAR USUARIO</h1></div>
-    	
-		<!-- MENU -->
-		<%@ include file='menu/menu.jsp' %>
+        <h1>LOGIN USUARIO</h1></div>
+    
 		
 		<!-- form -->
 		<form:form class="formulario" action="/login" method="post" modelAttribute="FormLogin" id="formLogin">		
 		
 			<div class="">
-				<input class="campos-form" type="text" id="rutLogin" name="rutLogin" placeholder="* Rut">
+				<input class="campos-form" type="text" id="rutLogin" name="rut" placeholder="* Rut">
 			</div>
 	
 			<div class="">
-				 <input class="campos-form" type="text" id="contraLogin" name="contraLogin" placeholder="* Contraseña" >
+				 <input class="campos-form" type="text" id="contraLogin" name="password" placeholder="* Contraseña" >
 			</div>
 		
 			<br>

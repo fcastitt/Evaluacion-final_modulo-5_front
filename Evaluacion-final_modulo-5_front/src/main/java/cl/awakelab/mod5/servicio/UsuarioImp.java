@@ -10,7 +10,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -28,8 +28,8 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 	@Autowired
 	RestTemplate restTemp;
 	
-	//@Autowired
-	//BCryptPasswordEn bCPE;
+	@Autowired
+	BCryptPasswordEncoder bCPE;
 	
 	@Override
 	public List<Usuarios> listar() {
@@ -46,9 +46,9 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 	@Override
 	public Usuarios crear(Usuarios dato) {
 		
-		//String clave = bCPE.encode(dato.getPassword());
+		String clave = bCPE.encode(dato.getPassword());
 		
-		//dato.setPassword(clave);
+		dato.setPassword(clave);
 		
 		ResponseEntity<Usuarios> responseUsuario = restTemp.postForEntity(APICREARUSUARIO, dato, Usuarios.class);
 		
