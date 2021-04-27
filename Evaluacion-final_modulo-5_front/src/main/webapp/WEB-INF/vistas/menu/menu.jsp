@@ -58,7 +58,7 @@
         			</div>
       			</li>	
 			
-				<li class="nav-item"><a class="nav-link" href="listadoVisitas">Visitas</a></li>
+				<li class="nav-item"><a class="nav-link" href="/profesional/listadoVisitas">Visitas</a></li>
 	
 				<li class="nav-item"><a class="nav-link" href="responderChecklist">Checklist</a></li>
 			</ul>

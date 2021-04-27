@@ -78,7 +78,7 @@
 	
 	        <script>
 	            $(document).ready(function () {
-	                $('#listarcapacitaciones').DataTable({
+	                $('#listadoVisitas').DataTable({
 	                    language: {
 	                        url: 'http://cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json'
 	                    }

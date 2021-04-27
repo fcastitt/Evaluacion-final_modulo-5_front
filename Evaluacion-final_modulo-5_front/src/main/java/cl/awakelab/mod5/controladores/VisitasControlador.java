@@ -10,16 +10,15 @@ import cl.awakelab.mod5.dto.Visitas;
 import cl.awakelab.mod5.servicio.InterfasServicios;
 
 @Controller
-@RequestMapping("/api/v1/visitas")
+@RequestMapping("/profesional")
 public class VisitasControlador {
 	
 	@Autowired
 	InterfasServicios<Visitas> ivisitas;
 		
-		@GetMapping
+		@GetMapping("/listadoVisitas")
 		public String ejecutarVisitas(ModelMap modellista) {
-			modellista.put("claveListaVisitas", ivisitas.listar());
-			
+			//modellista.put("claveListaVisitas", ivisitas.listar());	
 			return "listadoVisitas" ;
 		}
 	}
