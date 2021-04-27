@@ -39,10 +39,12 @@
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           				<a class="dropdown-item" href="/administrativo/crearUsuario">Crear Usuario</a>
           				<a class="dropdown-item" href="/administrativo/listadoUsuario">Listado de Usuarios</a>
+          				<!-- Lo comento porque según modulos anteriores el link se hace desde Listado de Usuario
           				<div class="dropdown-divider"></div>
          				<a class="dropdown-item" href="editarCliente">Editar Cliente</a>
          				<a class="dropdown-item" href="editarProfesional">Editar Profesional</a>
          				<a class="dropdown-item" href="editarAdministrativo">Editar Administrativo</a>
+        				-->
         			</div>
       			</li>	
 
