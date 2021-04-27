@@ -61,11 +61,11 @@
 			</div>
 	
 			<div class="">
-				<select class="campos-form" id="usTipo" name="usTipo" >
+				<select class="campos-form" id="usTipo" name="tipoUsuario" >
 					<option selected disabled value="">* Tipo de Usuario</option>
-					<option value="1">Cliente</option>
-					<option value="2">Profesional</option>
-					<option value="3">Administrativo</option>
+					<option value="Cliente">Cliente</option>
+					<option value="Profesional">Profesional</option>
+					<option value="Administrativo">Administrativo</option>
 				</select>
 			</div>
 			<br>

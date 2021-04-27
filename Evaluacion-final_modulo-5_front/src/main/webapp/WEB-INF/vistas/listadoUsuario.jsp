@@ -51,6 +51,7 @@
                     <th>Apelidos</th>
                     <th>Fecha de Nacimiento</th>
                     <th>Tipo de usuario</th>
+                    <th>Editar</th>
                 </tr>
             </thead>
 
@@ -63,25 +64,26 @@
 	                    <td><c:out value="${listaUsuario.getUsuApellido()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getUsuFechaNacimiento()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getTipoUsuario()}"></c:out></td>
-	                    <td> <a href="/usuario/buscar?rut=${usuario.getRut()}"> Editar</a></td>
+	                    <td> <a href="/administrativo/${listaUsuario.getTipoUsuario()}?rut=${usuario.getRut()}"> Editar</a></td>
                </c:forEach> 
             </tbody>
-           	<br>
+           	<!--
         	<div>
            		<input 	type="button" 
            				onclick="location.href='crearCapacitacion';"
                     	value="Crear usuario">
 			</div>
+			-->
 	       </table>
 			
-			<!-- Scrips data table  -->
+			<!-- Scrips data table --> 
 	        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 	        <script src="https://cdn.datatables.net/1.10.24/js/dataTables.jqueryui.min.js"></script>
 	
 	        <script>
 	            $(document).ready(function () {
-	                $('#listarcapacitaciones').DataTable({
+	                $('#listaUsuarios').DataTable({
 	                    language: {
 	                        url: 'http://cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json'
 	                    }

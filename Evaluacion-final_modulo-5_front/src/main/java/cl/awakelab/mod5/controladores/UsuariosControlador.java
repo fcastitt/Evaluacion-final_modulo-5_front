@@ -42,21 +42,20 @@ public class UsuariosControlador {
 		return new RedirectView("/administrativo/listadoUsuario") ;
 	}	
 	
-		@GetMapping("/editar")
+		@GetMapping("/Cliente")
 		public String ejecutarEditarUsuario(@RequestParam("rut")String rutUsuario, ModelMap modelbuscar) {
+				
+			modelbuscar.put("claveRutUsuario", rutUsuario);
 			
-			
-			modelbuscar.put("claveRutUsuario", usuarioService.buscarPorId(rutUsuario));
-			
-			return "editarUsuario" ;
+			return "editarCliente" ;
 		}
 		
-		@GetMapping("/editarProfesional")
+		@GetMapping("/Profesional")
 		public String ejecutarEditarProfesional() {
 			return "editarProfesional" ;
 		}
 
-		@GetMapping("/editarAdministrativo")
+		@GetMapping("/Administrativo")
 		public String ejecutarEditarAdministrativo() {
 			return "editarAdministrativo" ;
 		}
@@ -65,7 +64,6 @@ public class UsuariosControlador {
 		public  String buscarUsuario(@RequestParam("rut")String rutUsuario, ModelMap modelbuscar) {
 			
 			modelbuscar.put("claveRutUsuario", usuarioService.buscarPorId(rutUsuario));
-			
 			
 			return  null;
 		}
