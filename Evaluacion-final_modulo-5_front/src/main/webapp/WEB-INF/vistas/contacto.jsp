@@ -40,8 +40,8 @@
 
 	<h1 class="centrar"> CONTACTO</h1>
 	
-	
 	<form:form class="formulario" modelAttribute="formContacto" action="/cliente/contacto" method="post" id="formContacto">
+
 
 		<div class="">
 			<input class="campos-form" type="text" id="nomContacto" name="nomContacto" placeholder="* Nombre">
@@ -62,8 +62,8 @@
 		<div class="">
 			<select class="campos-form" id="genContacto" name="genContacto">
 				<option selected disabled value="">* Genero</option>
-				<option value="1">Hombre</option>
-				<option value="2">Mujer</option>
+				<option value="Hombre">Hombre</option>
+				<option value="Mujer">Mujer</option>
 			</select>
 		</div>
 		<br>

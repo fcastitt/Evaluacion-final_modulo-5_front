@@ -13,7 +13,7 @@ import cl.awakelab.mod5.dto.Pago;
 import cl.awakelab.mod5.servicio.InterfasServicios;
 
 @Controller
-@RequestMapping("api/v1/pagos")
+@RequestMapping("/pagos")
 public class PagosControlador {
 	
 	@Autowired
@@ -31,9 +31,11 @@ public class PagosControlador {
 	}
 	
 	@PostMapping("/crearPago")
-	public String crearPago(@ModelAttribute("formCrearPago")Pago nuevoPago) { 
+	public String crearPago(@ModelAttribute ("formCrearPago") Pago nuevoPago) { 
 		
+		System.out.println("controlador de crear pago");
 		ipagos.crear(nuevoPago);
+	
 		return "crearPago" ;
 	}
 		
