@@ -34,7 +34,6 @@ public class UsuariosControlador {
 	}
 	@PostMapping("/crearUsuario")
 	public RedirectView crearUsuario(@ModelAttribute ("FormCrearUsuario") Usuarios formulario) { 
-		System.out.println("entra al controlador");
 		usuarioService.crear(formulario);
 		return new RedirectView("/administrativo/listadoUsuario") ;
 	}	
@@ -47,7 +46,8 @@ public class UsuariosControlador {
 			return "editarCliente" ;
 		}
 		@PostMapping("/Cliente")
-		public RedirectView EditarCliente() {
+		public RedirectView EditarCliente(@ModelAttribute ("FormEditarUsuario") Usuarios formulario) {
+			usuarioService.modificar(formulario);
 			return new RedirectView("/administrativo/listadoUsuario") ;
 		}
 		
@@ -59,7 +59,8 @@ public class UsuariosControlador {
 			return "editarProfesional" ;
 		}
 		@PostMapping("/Profesional")
-		public RedirectView EditarProfesional() {
+		public RedirectView EditarProfesional(@ModelAttribute ("FormEditarUsuario") Usuarios formulario) {
+			usuarioService.modificar(formulario);
 			return new RedirectView("/administrativo/listadoUsuario") ;
 		}
 		
@@ -71,7 +72,8 @@ public class UsuariosControlador {
 			return "editarAdministrativo" ;
 		}
 		@PostMapping("/Administrativo")
-		public RedirectView EditarAdministrativo() {
+		public RedirectView EditarAdministrativo(@ModelAttribute ("FormEditarUsuario") Usuarios formulario) {
+			usuarioService.modificar(formulario);
 			return new RedirectView("/administrativo/listadoUsuario") ;
 		}
 		

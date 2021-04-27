@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.httpclient.Header;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
@@ -23,6 +22,7 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 
 	private static final String APILISTARUSUARIO = "http://localhost:8889/api/v1/usuarios";
 	private static final String APICREARUSUARIO = "http://localhost:8889/api/v1/usuarios/crear";
+	private static final String APIMODIFICARUSUARIO = "http://localhost:8889/api/v1/usuarios/crear";
 	private static final String APIBUSCARPORRUN = "http://localhost:8889/api/v1/usuarios/buscar/{idUsuario}";
 	
 	@Autowired
@@ -49,7 +49,6 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 		//String clave = bCPE.encode(dato.getPassword());
 		
 		//dato.setPassword(clave);
-		System.out.println("Entra a la implementacion");
 		
 		ResponseEntity<Usuarios> responseUsuario = restTemp.postForEntity(APICREARUSUARIO, dato, Usuarios.class);
 		
@@ -63,7 +62,10 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 
 	@Override
 	public Usuarios modificar(Usuarios dato) {
-		return null;
+		
+		ResponseEntity<Usuarios> responseUsuario = restTemp.postForEntity(APIMODIFICARUSUARIO, dato, Usuarios.class);
+		
+		return responseUsuario.getBody();
 	}
 
 	
