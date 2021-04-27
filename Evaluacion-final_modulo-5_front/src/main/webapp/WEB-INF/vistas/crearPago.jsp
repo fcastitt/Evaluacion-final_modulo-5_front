@@ -99,7 +99,8 @@
 	 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 	 
 	 <!-- archivo JavaScript -->
-	 <script type="text/javascript" src="/js/validaciones/crearPago.js"></script>
+	 
+<script type="text/javascript" src="/js/validaciones/crearPago.js"></script>	
 	
 		 <footer>
         <h1>© 2021  humanidea  ·  Pivacidad  ·  Terminos  · Mapa del Sitios </h1>
