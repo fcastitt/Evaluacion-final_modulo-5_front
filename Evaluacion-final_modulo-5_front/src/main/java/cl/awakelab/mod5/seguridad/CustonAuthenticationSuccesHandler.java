@@ -23,15 +23,15 @@ public class CustonAuthenticationSuccesHandler implements AuthenticationSuccessH
 		
 		if (roles.contains("Administrativo")) {
 			
-			response.sendRedirect("/administrativo");
+			response.sendRedirect("/administrativo/listadoUsuario");
 			
-		} else if (roles.contains("cliente")) {
+		} else if (roles.contains("Cliente")) {
 			
-			response.sendRedirect("/cliente");
+			response.sendRedirect("/cliente/listarCapacitacion");
 			
 		} else {
 			
-			response.sendRedirect("/profesional");
+			response.sendRedirect("/profesional/responderChecklist");
 			
 		}
 	}
