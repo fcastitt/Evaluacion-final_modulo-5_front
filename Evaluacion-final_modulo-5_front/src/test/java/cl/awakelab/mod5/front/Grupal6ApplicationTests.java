@@ -1,4 +1,4 @@
-package cl.awakelab.grupal6;
+package cl.awakelab.mod5.front;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
