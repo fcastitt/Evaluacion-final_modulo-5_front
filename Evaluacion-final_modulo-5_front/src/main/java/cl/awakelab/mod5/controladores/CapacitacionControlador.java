@@ -1,7 +1,5 @@
 package cl.awakelab.mod5.controladores;
 
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.view.RedirectView;
 
 import cl.awakelab.mod5.controladores.CapacitacionControlador;
 import cl.awakelab.mod5.dto.Capacitacion;
@@ -18,7 +17,7 @@ import cl.awakelab.mod5.servicio.InterfasServicios;
 
 
 @Controller
-@RequestMapping("/administrativo")
+@RequestMapping("/cliente")
 public class CapacitacionControlador {
 	
 	@Autowired
@@ -33,13 +32,13 @@ public class CapacitacionControlador {
 	}
 	
 	@PostMapping ("/crearCapacitacion")
-	public String crearCapacitacion(@ModelAttribute("FormCrearCapacitacion") Capacitacion nuevaCapacitacion) { 
+	public RedirectView crearCapacitacion(@ModelAttribute("FormCrearCapacitacion") Capacitacion nuevaCapacitacion) { 
 		
 		capService.crear(nuevaCapacitacion);
 	
 		consola.info("-------SE HA CREADO UNA NUEVA CAPACITACION----");
 		
-		return "crearCapacitacion";
+		return new RedirectView("/cliente/listarCapacitacion");
 	}
 	
 	

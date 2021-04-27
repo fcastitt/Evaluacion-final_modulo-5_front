@@ -28,9 +28,9 @@
 				<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capacitacion</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="/administrativo/crearCapacitacion">Crear Capacitacion</a>
+          				<a class="dropdown-item" href="/cliente/crearCapacitacion">Crear Capacitacion</a>
           				<div class="dropdown-divider"></div>
-         				<a class="dropdown-item" href="listarCapacitacion">Listado de Capacitaciones</a>
+         				<a class="dropdown-item" href="/cliente/listarCapacitacion">Listado de Capacitaciones</a>
         			</div>
       			</li>	
 					
