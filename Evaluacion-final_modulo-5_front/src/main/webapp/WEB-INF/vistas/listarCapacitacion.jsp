@@ -50,7 +50,7 @@
                 </tr>
             </thead>
             <tbody>
-            	<c:forEach items="${listaCapacitacion}" var="listaCapacitacion">
+            	<c:forEach items="${listaCapacitacion}" var="capacitacion">
                 <tr>
                     <td><c:out value="${capacitacion.getIdCapacitacion()}"></c:out></td>
                     <td><c:out value="${capacitacion.getCapFecha()}"></c:out></td>

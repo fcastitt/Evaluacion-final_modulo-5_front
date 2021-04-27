@@ -32,7 +32,7 @@
     	<h1 class="centrar">CREAR CAPACITACION</h1>
 	
 		<!-- form -->
-		<form:form class="formulario" action="/capacitacion/crearCapacitacion" method="post" modelAttribute="FormCrearCapacitacion" id="formCap">
+		<form:form class="formulario" action="/administrativo/crearCapacitacion" method="post" modelAttribute="FormCrearCapacitacion" id="formCap">
 		
 			<div class="">
 				<input type="number" class="campos-form" id="" name="idCapacitacion" placeholder="* ID capacitacion">

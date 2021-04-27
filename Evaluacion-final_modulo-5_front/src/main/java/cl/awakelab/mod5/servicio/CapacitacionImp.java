@@ -22,16 +22,14 @@ public class CapacitacionImp implements InterfasServicios<Capacitacion> {
 	@Autowired
 	RestTemplate restTemp;
 	
-	@Autowired
-	InterfasServicios<Capacitacion> IntCapacitacion;
 
 	
 	@Override
 	public List<Capacitacion> listar() {
 			
-		HttpHeaders headers = new HttpHeaders();
+		HttpHeaders header = new HttpHeaders();
 		
-		HttpEntity<Capacitacion> entityCapacitacion = new HttpEntity<Capacitacion>(headers);
+		HttpEntity<Capacitacion> entityCapacitacion = new HttpEntity<Capacitacion>(header);
 		
 		ResponseEntity<List<Capacitacion>> responseUsuarios = restTemp.exchange(APILISTARCAPACITACION, HttpMethod.GET, entityCapacitacion, new ParameterizedTypeReference<List<Capacitacion>>() {
 		});

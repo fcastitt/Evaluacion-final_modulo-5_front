@@ -18,7 +18,7 @@ import cl.awakelab.mod5.servicio.InterfasServicios;
 
 
 @Controller
-@RequestMapping("/capacitacion")
+@RequestMapping("/administrativo")
 public class CapacitacionControlador {
 	
 	@Autowired
@@ -45,13 +45,8 @@ public class CapacitacionControlador {
 	
 	@GetMapping("/listarCapacitacion")
 	public String ejecutalistarcap(ModelMap mostrar) {
-		
-		List<Capacitacion> listarCapacitacion = capService.listar();
-		
-		mostrar.put("listaCapacitacion" , listarCapacitacion);
-		
-		consola.info("-------ESTO MUESTRA QUE LISTARCAPACITACION SIRVE----");
-		
+		mostrar.put("listaCapacitacion", capService.listar());
+		System.out.println(capService.listar());
 		return "listarCapacitacion"; 
 	}
 	
