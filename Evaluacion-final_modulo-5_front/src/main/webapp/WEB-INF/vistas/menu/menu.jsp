@@ -52,15 +52,15 @@
 				<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pagos</a>
           			 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="/pagos/crearPago">Ingresar un pago</a>
+          				<a class="dropdown-item" href="/administrativo/crearPago">Ingresar un pago</a>
           				<div class="dropdown-divider"></div>
-         				<a class="dropdown-item" href="/pagos/listadoPago">Listado de pagos</a>
+         				<a class="dropdown-item" href="/administrativo/listadoPago">Listado de pagos</a>
         			</div>
       			</li>	
 			
 				<li class="nav-item"><a class="nav-link" href="/profesional/listadoVisitas">Visitas</a></li>
 	
-				<li class="nav-item"><a class="nav-link" href="responderChecklist">Checklist</a></li>
+				<li class="nav-item"><a class="nav-link" href="/profesional/responderChecklist">Checklist</a></li>
 			</ul>
 		</div>
 		<div>

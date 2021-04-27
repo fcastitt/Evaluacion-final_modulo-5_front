@@ -80,7 +80,7 @@
 	
 	        <script>
 	            $(document).ready(function () {
-	                $('#listarcapacitaciones').DataTable({
+	                $('#listaPago').DataTable({
 	                    language: {
 	                        url: 'http://cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json'
 	                    }

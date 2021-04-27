@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cl.awakelab.mod5.dto.Capacitacion;
 import cl.awakelab.mod5.dto.Pago;
 import cl.awakelab.mod5.servicio.InterfasServicios;
 
 @Controller
-@RequestMapping("/pagos")
+@RequestMapping("/administrativo")
 public class PagosControlador {
 	
 	@Autowired
