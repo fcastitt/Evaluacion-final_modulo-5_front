@@ -38,6 +38,45 @@
         <h1>EDITAR PROFESIONAL</h1></div>
 		
 		<!-- form -->
+		<form:form class="formulario" action="/administrativo/Profesional" 
+		method="post" modelAttribute="FormEditarUsuario" id="formUs">
+		
+			<div class="">
+				<input type="text" class="campos-form" id="uRun" name="uRun" value="${rutUsuario}">
+			</div>
+			
+			<div class="">
+				<input type="password" class="campos-form" id="uRun" name="password" placeholder="* Password Usuario">
+			</div>
+			
+			<div class="">
+				 <input type="text" placeholder="* Nombres" class="campos-form" id="usuNombre" name="usuNombre" >
+			</div>
+			
+			<div class="">
+				<input type="text" placeholder="* Apellidos" class="campos-form" id="usuApellido" name="usuApellido">
+			</div>
+	
+			<div class="">
+				 <input placeholder="* Fecha de Nacimiento" type="date" class="campos-form" id="usuFechaNacimiento" name="usuFechaNacimiento"  >
+			</div>
+	
+			<div class="">
+				<select class="campos-form" id="usTipo" name="tipoUsuario" >
+					<option selected disabled value="">* Tipo de Usuario</option>
+					<option value="Cliente">Cliente</option>
+					<option value="Profesional">Profesional</option>
+					<option value="Administrativo">Administrativo</option>
+				</select>
+			</div>
+			<br>
+			<div class="">
+			<label for="" class=""> (*) Campos obligatorios</label></div>
+			<input class="submit" id="boton" type="submit" value="Editar">
+		</form:form>
+		
+		<!-- form -->
+		<!--
 		<form:form class="formulario" action="/crearUsurarioProfesional" method="post" modelAttribute="FormUsProf" id="FormUsProf">
 
 			<div class="">
@@ -58,8 +97,8 @@
 			<br>
 			<div class="">
 				<input class="submit" id="boton" type="submit" value="Enviar"></div>	
-		</form:form>
-		</div>
+		</form:form>-->
+	
 	
 				<!-- BootStrap -->
 	    <script

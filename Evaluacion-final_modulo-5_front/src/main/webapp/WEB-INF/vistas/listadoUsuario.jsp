@@ -64,7 +64,7 @@
 	                    <td><c:out value="${listaUsuario.getUsuApellido()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getUsuFechaNacimiento()}"></c:out></td>
 	                    <td><c:out value="${listaUsuario.getTipoUsuario()}"></c:out></td>
-	                    <td> <a href="/administrativo/${listaUsuario.getTipoUsuario()}?rut=${usuario.getRut()}"> Editar</a></td>
+	                    <td> <a href="/administrativo/${listaUsuario.getTipoUsuario()}?rut=${listaUsuario.getURun()}"> Editar</a></td>
                </c:forEach> 
             </tbody>
            	<!--

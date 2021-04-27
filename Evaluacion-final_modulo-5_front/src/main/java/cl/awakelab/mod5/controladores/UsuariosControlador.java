@@ -27,38 +27,55 @@ public class UsuariosControlador {
 	}
 	
 	
+	
 	@GetMapping("/crearUsuario")
 	public String ejecutarUsuario() {
 		return "crearUsuario" ;
 	}
-		
-
 	@PostMapping("/crearUsuario")
 	public RedirectView crearUsuario(@ModelAttribute ("FormCrearUsuario") Usuarios formulario) { 
-		
 		System.out.println("entra al controlador");
 		usuarioService.crear(formulario);
-		
 		return new RedirectView("/administrativo/listadoUsuario") ;
 	}	
 	
+	
+	
 		@GetMapping("/Cliente")
-		public String ejecutarEditarUsuario(@RequestParam("rut")String rutUsuario, ModelMap modelbuscar) {
-				
-			modelbuscar.put("claveRutUsuario", rutUsuario);
-			
+		public String ejecutarEditarCliente(@RequestParam("rut")String rutUsuario, ModelMap modelClie) {		
+			modelClie.put("rutUsuario", rutUsuario);	
 			return "editarCliente" ;
 		}
+		@PostMapping("/Cliente")
+		public RedirectView EditarCliente() {
+			return new RedirectView("/administrativo/listadoUsuario") ;
+		}
+		
+		
 		
 		@GetMapping("/Profesional")
-		public String ejecutarEditarProfesional() {
+		public String ejecutarEditarProfesional(@RequestParam("rut")String rutUsuario, ModelMap modelPro) {
+			modelPro.put("rutUsuario", rutUsuario);	
 			return "editarProfesional" ;
 		}
+		@PostMapping("/Profesional")
+		public RedirectView EditarProfesional() {
+			return new RedirectView("/administrativo/listadoUsuario") ;
+		}
+		
 
+		
 		@GetMapping("/Administrativo")
-		public String ejecutarEditarAdministrativo() {
+		public String ejecutarEditarAdministrativo(@RequestParam("rut")String rutUsuario, ModelMap modelAdm) {	
+			modelAdm.put("rutUsuario", rutUsuario);	
 			return "editarAdministrativo" ;
 		}
+		@PostMapping("/Administrativo")
+		public RedirectView EditarAdministrativo() {
+			return new RedirectView("/administrativo/listadoUsuario") ;
+		}
+		
+		
 		
 		@GetMapping("/buscar")
 		public  String buscarUsuario(@RequestParam("rut")String rutUsuario, ModelMap modelbuscar) {
