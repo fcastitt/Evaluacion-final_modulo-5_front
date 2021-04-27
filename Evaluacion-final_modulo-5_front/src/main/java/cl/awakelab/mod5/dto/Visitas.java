@@ -13,13 +13,13 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Visitas {
+public class Visitas{
 	
-	private Integer idVisitas;
+	private Integer idVisita;
 	private String visFecha;
 	private String visHora;
-	private String visRut;
-	private String visNombre;
+	private String visRutCliente;
+	private String visNombreCliente;
 	private String visChequeo;
 	
 	

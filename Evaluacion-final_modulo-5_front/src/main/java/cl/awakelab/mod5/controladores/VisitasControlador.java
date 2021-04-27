@@ -17,8 +17,8 @@ public class VisitasControlador {
 	InterfasServicios<Visitas> ivisitas;
 		
 		@GetMapping("/listadoVisitas")
-		public String ejecutarVisitas(ModelMap modellista) {
-			//modellista.put("claveListaVisitas", ivisitas.listar());	
+		public String ejecutarVisitas(ModelMap modelLista) {
+			modelLista.put("claveListaVisitas", ivisitas.listar());	
 			return "listadoVisitas" ;
 		}
 	}

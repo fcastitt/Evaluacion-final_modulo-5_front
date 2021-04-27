@@ -30,10 +30,10 @@ public class VisitasImp implements InterfasServicios<Visitas> {
 		
 		HttpEntity<Visitas> entityVisitas = new HttpEntity<Visitas>(headers);
 		
-		ResponseEntity<List<Visitas>> responseUsuarios = restTemplate.exchange(APILISTARVISITAS, HttpMethod.GET, entityVisitas, new ParameterizedTypeReference<List<Visitas>>() {
+		ResponseEntity<List<Visitas>> responseVisitas = restTemplate.exchange(APILISTARVISITAS, HttpMethod.GET, entityVisitas, new ParameterizedTypeReference<List<Visitas>>() {
 		});
 		
-		return responseUsuarios.getBody();
+		return responseVisitas.getBody();
 	}
 
 	@Override

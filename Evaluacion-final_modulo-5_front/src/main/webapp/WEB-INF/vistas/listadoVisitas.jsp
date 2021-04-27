@@ -54,12 +54,12 @@
             <tbody>
             	<c:forEach items="${claveListaVisitas}" var="listaVisitas">
 	                <tr>
-	                    <td><c:out value="${listaUsuario.getIdVisita()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getVisFecha()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getVisHora()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getVisRut()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getNombre()}"></c:out></td>
-	                    <td><c:out value="${listaUsuario.getVisChequeo()}"></c:out></td>
+	                    <td><c:out value="${listaVisitas.getIdVisita()}"></c:out></td>
+	                    <td><c:out value="${listaVisitas.getVisFecha()}"></c:out></td>
+	                    <td><c:out value="${listaVisitas.getVisHora()}"></c:out></td>
+	                    <td><c:out value="${listaVisitas.getVisRutCliente()}"></c:out></td>
+	                    <td><c:out value="${listaVisitas.getVisNombreCliente()}"></c:out></td>
+	                    <td><c:out value="${listaVisitas.getVisChequeo()}"></c:out></td>
 	                </tr>
                	</c:forEach> 
             </tbody>
