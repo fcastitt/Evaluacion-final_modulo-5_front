@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import cl.awakelab.mod5.dto.Chequeo;
 
 @Service
-public class ChequeoServiceImp implements InterfasServicios<Chequeo>{
+public class ChequeoServiceImp implements InterfasServicios<Chequeo> {
 
 	public static final String APILISTACHEQUEO = "http://localhost:8889/api/v1/chequeo";
 	

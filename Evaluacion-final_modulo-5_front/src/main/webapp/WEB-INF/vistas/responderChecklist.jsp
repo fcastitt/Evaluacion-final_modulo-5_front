@@ -57,6 +57,7 @@
                     <th>Detalle</th>
                     <th>Estado</th>
                     <th>Rut Cliente</th>
+                    
                 </tr>
             </thead>
             
