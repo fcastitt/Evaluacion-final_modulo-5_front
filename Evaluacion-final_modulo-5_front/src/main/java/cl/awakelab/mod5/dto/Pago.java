@@ -15,7 +15,7 @@ public class Pago {
 
 	private Integer pagMonto;
 	private String pagMes;
-	private Integer pagAño;
+	private Integer pagAnno;
 	private String pagRut;
 	private String pagFecha;
 }
