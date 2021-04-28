@@ -43,46 +43,50 @@
     	<div class="container">
         <table id="responderCheck" class="table table-striped table-bordered" style="width:100%">
             
+          	<!-- TITULO PAGINA -->
+    	<div class="centrar">
+        <h1>LISTADO CHEQUEOS</h1></div>
+		
+		<!-- TABLA -->
+    	<div class="container">
+        <table id="listadoVisitas" class="table table-striped table-bordered" style="width:100%">
             <thead>
             	<tr>
-                	<th>Checks</th>
-            	</tr>
+                	<th>Id Chequeo</th>
+                    <th>Nombre</th>
+                    <th>Detalle</th>
+                    <th>Estado</th>
+                    <th>Rut Cliente</th>
+                </tr>
             </thead>
+            
             <tbody>
-            	<tr>
-            		<td>
-                    	<input type="checkbox" name="checkbox" value="check1"> <label for="check1">Chequeo 1</label><br>
-                       	<input type="checkbox" name="checkbox" value="check2"> <label for="check2">Chequeo 2</label><br>
-                        <input type="checkbox" name="checkbox" value="check3"> <label for="check3">Chequeo 3</label><br>
-                        <input type="checkbox" name="checkbox" value="check4"> <label for="check4">Chequeo 4</label><br>
-                        <input type="checkbox" name="checkbox" value="check5"> <label for="check5">Chequeo 5</label><br>
-                        <input type="checkbox" name="checkbox" value="check6"> <label for="check6">Chequeo 6</label><br>
-                        <input type="checkbox" name="checkbox" value="check7"> <label for="check7">Chequeo 7</label><br>
-                    	<br>
-                        <input class="centrar" type="button" name="Submit" value="Verificar" id="verificarChequeo">
-                        <div id="contenedor"></div>
-                     </td>
-				</tr>
-			</tbody>
-   
-        	<tfoot class="formularios menuVolver">	
-        		<tr>
-    	       		<td>
- 		            	<input  type="button" onclick="location.href='./listadovisitas.html';" value="Volver" />
-                	</td>
-            	</tr>
-            </tfoot>
-        </table>
-		</div>
-	
-		<!-- Scrips data table  -->
+            	<c:forEach items="${listaChequeo}" var="listaChequeo">
+	                <tr>
+	                    <td><c:out value="${listaChequeo.getIdChequeo()}"></c:out></td>
+	                    <td><c:out value="${listaChequeo.getNombre()}"></c:out></td>
+	                    <td><c:out value="${listaChequeo.getDetalle()}"></c:out></td>
+	                    <td><c:out value="${listaChequeo.getEstado()}"></c:out></td>
+	                    <td><c:out value="${listaChequeo.getClienteRutCliente()}"></c:out></td>
+	                </tr>
+               	</c:forEach> 
+            </tbody>
+           	<br>
+        	<div>
+           		<input 	type="button" 
+           				onclick="location.href='crearCapacitacion';"
+                    	value="Crear visita">
+  			</div>
+	       	</table>
+			
+			<!-- Scrips data table  -->
 	        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 	        <script src="https://cdn.datatables.net/1.10.24/js/dataTables.jqueryui.min.js"></script>
 	
 	        <script>
 	            $(document).ready(function () {
-	                $('#listarcapacitaciones').DataTable({
+	                $('#listadoVisitas').DataTable({
 	                    language: {
 	                        url: 'http://cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json'
 	                    }
@@ -94,6 +98,7 @@
 	 	<footer><h1>© 2021  humanidea  ·  Pivacidad  ·  Terminos  · Mapa del Sitios </h1></footer>
 	</body>
 </html>
+	                 
             	
-            	
+
             	
