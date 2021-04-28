@@ -11,7 +11,7 @@ import cl.awakelab.mod5.servicio.InterfasServicios;
 
 	@Controller
 	@RequestMapping("/profesional")
-	public class ChecklistControlador {
+	public class ChecklistControlador{
 		
 		@Autowired
 		InterfasServicios<Chequeo> iChequeoService;

@@ -63,6 +63,7 @@
             
             <tbody>
             	<c:forEach items="${listaChequeo}" var="listaChequeo">
+            	
 	                <tr>
 	                    <td><c:out value="${listaChequeo.getIdChequeo()}"></c:out></td>
 	                    <td><c:out value="${listaChequeo.getNombre()}"></c:out></td>

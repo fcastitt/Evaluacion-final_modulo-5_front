@@ -11,7 +11,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Chequeo{
+public class Chequeo {
 	
 	
 	private Integer idChequeo;
