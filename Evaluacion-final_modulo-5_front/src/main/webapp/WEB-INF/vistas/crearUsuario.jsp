@@ -1,9 +1,7 @@
 <%@ page 	language="java" 
 			contentType="text/html; charset=ISO-8859-1"
     		pageEncoding="ISO-8859-1"%>
-
 <%@ taglib 	prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <%@ taglib 	prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
@@ -26,6 +24,7 @@
 		<style type="text/css"> <%@include file="/css/style.css"%></style> 	
 	</head>
 
+
 	<body>
 		<!--NAV -->	
 		<div>
@@ -38,7 +37,7 @@
 		
 		<!-- form -->
 		<form:form class="formulario" action="/administrativo/crearUsuario" 
-		method="post" modelAttribute="FormCrearUsuario" id="formUs">
+			method="post" modelAttribute="FormCrearUsuario" id="formUs">
 		
 			<div class="">
 				<input type="text" class="campos-form" id="uRun" name="uRun" placeholder="* Rut Usuario">
@@ -61,23 +60,18 @@
 			</div>
 	
 			<div class="">
-				<select class="campos-form" id="usTipo" name="tipoUsuario" >
+				<select class="campos-form" id="validationTooltip04" name="tipoUsuario" >
 					<option selected disabled value="">* Tipo de Usuario</option>
 					<option value="Cliente">Cliente</option>
 					<option value="Profesional">Profesional</option>
 					<option value="Administrativo">Administrativo</option>
 				</select>
 			</div>
-			<br>
-			<div class="">
-			<label for="" class=""> (*) Campos obligatorios</label></div>
-			<input class="submit" id="boton" type="submit" value="Enviar">
-		</form:form>
-		
-		<!-- 
-		<div id="cliente" class="">
+			
+		<!-- Cliente -->
+		<div class="" id="divInputCliente" style= "Display:none;">		
 		<form:form class="formulario" action="/crearUsurarioCliente" method="post" modelAttribute="FormUsCliente" id="FormUsCliente">
-			<h1 class="centrar">DATOS DE CLIENTE</h1>
+			<h3 class="centrar">DATOS DE CLIENTE</h3>
 		
 			<div class="">
 				 <input type="text" class="campos-form" id="rutCliente" name="rutCliente" placeholder="* Rut del cliente" onfocus="">
@@ -110,12 +104,14 @@
 			<div class="">
 				 <input type="number" class="campos-form" id="cliEdad" name="cliEdad" placeholder="* Edad" onfocus="">
 			</div>		 
-		</form:form>
+		</form:form>	
 		</div>
 		
-		<div id="profesional" class="">
-		<form:form class="formulario" action="/crearUsurarioProfesional" method="post" modelAttribute="FormUsProf" id="FormUsProf">
-		<h1 class="centrar">DATOS DE PROFESIONAL</h1>
+		<!-- Profesional -->
+		<div class="" id="divInputPro" style= "Display:none;">
+		
+			<form:form class="formulario" action="/crearUsurarioProfesional" method="post" modelAttribute="FormUsProf" id="FormUsProf">
+			<h3 class="centrar">DATOS DE PROFESIONAL</h3>
 					
 			<div class="">
 				 <input type="text" class="campos-form" id="proTelefono" name="proTelefono" placeholder="* Telefono" onfocus="">
@@ -124,17 +120,17 @@
 			<div class="">
 				 <input type="text" class="campos-form" id="proTitulo" name="proTitulo" placeholder="* Titulo tecnico o profesional" onfocus="">
 			</div>		
-			
+		
 			<div class="">
 				 <input type="text" class="campos-form" id="proProyecto" name="proProyecto" placeholder="* Nombre del proyecto" onfocus="">
 			</div>
-		
-		</form:form>
+			</form:form>
 		</div>
-		 		
-		<div id="administrativo" class="">
-		<form:form class="formulario" action="/crearUsurarioAdministrativo" method="post" modelAttribute="FormUsAd" id="FormUsAd">
-		<h1>DATOS DE ADMINISTRATIVO</h1>
+		
+		<!-- Administrativo -->
+		<div class="" id="divInputAdm" style= "Display:none;">
+      		<form:form class="formulario" action="/crearUsurarioAdministrativo" method="post" modelAttribute="FormUsAd" id="FormUsAd">
+			<h3>DATOS DE ADMINISTRATIVO</h3>
 		
 			<div class="">
 				 <input type="email" class="campos-form" id="adCorreo" name="adCorreo" placeholder="* Email" onfocus="">
@@ -143,12 +139,29 @@
 			<div class="">
 				 <input type="text" class="campos-form" id="adArea" name="adArea" placeholder="* Area administrativa" onfocus="">
 			</div>			 	 		
-			<br>
-			<div class="">
-				<label for="" class=""> (*) Campos obligatorios</label></div>	
-			<br>
-	
+			</form:form>
+		</div>
+		
+		<!-- Boton -->
+		
+		<div class="centrar">
+			<label for="" class=""> (*) Campos obligatorios</label>
+			<input class="submit" id="boton" type="submit" value="Enviar">		
+		</div>
+		
 		</form:form>
+
+
+
+		
+		
+			<!-- 
+		<div id="profesional" class="">
+		
+		</div>
+		 		
+		<div id="administrativo" class="">
+		
 		</div>
 		-->
 	
@@ -170,6 +183,7 @@
 	 
 	 <!-- archivo JavaScript -->
 	<script type="text/javascript" src="/js/validaciones/crearUsuario.js"></script>
+	<script type="text/javascript" src="/js/validaciones/rol.js"></script>
 	
 		 <footer>
         <h1>© 2021  humanidea  ·  Pivacidad  ·  Terminos  · Mapa del Sitios </h1>
