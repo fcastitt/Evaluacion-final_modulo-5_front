@@ -9,7 +9,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Contacto</title>
-		<!-- jquery -->		
+        <!-- jquery -->		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		 
 		<!-- jquery validate -->
@@ -85,7 +85,7 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>	
-	
+
 		 <footer>
         <h1>© 2021  humanidea  ·  Pivacidad  ·  Terminos  · Mapa del Sitios </h1>
         </footer>
