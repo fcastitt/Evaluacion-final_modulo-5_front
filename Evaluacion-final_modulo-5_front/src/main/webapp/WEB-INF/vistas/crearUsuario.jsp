@@ -69,6 +69,7 @@
 			</div>
 			
 		<!-- Cliente -->
+		
 		<div class="" id="divInputCliente" style= "Display:none;">		
 		
 			<h3 class="centrar">DATOS DE CLIENTE</h3>
