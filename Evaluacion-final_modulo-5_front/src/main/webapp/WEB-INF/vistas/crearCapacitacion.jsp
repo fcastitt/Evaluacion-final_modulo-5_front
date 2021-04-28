@@ -35,10 +35,6 @@
 		<form:form class="formulario" action="/cliente/crearCapacitacion" method="post" modelAttribute="FormCrearCapacitacion" id="formCap">
 		
 			<div class="">
-				<input type="number" class="campos-form" id="" name="idCapacitacion" placeholder="* ID capacitacion">
-			</div>
-			
-			<div class="">
 				 <input type="text" placeholder="* Fecha" class="campos-form" id="fechaCap" name="capFecha" onfocus="(this.type='date')">
 			</div>
 			<div class="">
