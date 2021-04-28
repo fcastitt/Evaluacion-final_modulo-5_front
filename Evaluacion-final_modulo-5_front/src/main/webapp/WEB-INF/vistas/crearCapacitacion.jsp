@@ -51,7 +51,7 @@
 			</div>
 	
 			<div class="">
-				 <input type="number" class="campos-form" id="rutCap" name="clienteRutCliente" placeholder="* Rut Cliente">
+				 <input type="text" class="campos-form" id="rutCap" name="clienteRutCliente" placeholder="* Rut Cliente">
 			</div>
 			
 		
