@@ -22,7 +22,7 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 
 	private static final String APILISTARUSUARIO = "http://localhost:8889/api/v1/usuarios";
 	private static final String APICREARUSUARIO = "http://localhost:8889/api/v1/usuarios/crear";
-	private static final String APIMODIFICARUSUARIO = "http://localhost:8889/api/v1/usuarios/crear";
+	private static final String APIMODIFICARUSUARIO = "http://localhost:8889/api/v1/usuarios/editar";
 	private static final String APIBUSCARPORRUN = "http://localhost:8889/api/v1/usuarios/buscar/{idUsuario}";
 	
 	@Autowired
@@ -62,6 +62,10 @@ public class UsuarioImp implements InterfasServicios<Usuarios>{
 
 	@Override
 	public Usuarios modificar(Usuarios dato) {
+		
+		String clave = bCPE.encode(dato.getPassword());
+		
+		dato.setPassword(clave);
 		
 		ResponseEntity<Usuarios> responseUsuario = restTemp.postForEntity(APIMODIFICARUSUARIO, dato, Usuarios.class);
 		

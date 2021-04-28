@@ -42,7 +42,7 @@
 			</div>
 	
 			<div class="">
-				 <input class="campos-form" type="text" id="contraLogin" name="password" placeholder="* Contraseña" >
+				 <input class="campos-form" type="password" id="contraLogin" name="password" placeholder="* Contraseña" >
 			</div>
 		
 			<br>
