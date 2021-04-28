@@ -70,7 +70,7 @@
 			
 		<!-- Cliente -->
 		<div class="" id="divInputCliente" style= "Display:none;">		
-		<form:form class="formulario" action="/crearUsurarioCliente" method="post" modelAttribute="FormUsCliente" id="FormUsCliente">
+		
 			<h3 class="centrar">DATOS DE CLIENTE</h3>
 		
 			<div class="">
@@ -103,14 +103,12 @@
 				
 			<div class="">
 				 <input type="number" class="campos-form" id="cliEdad" name="cliEdad" placeholder="* Edad" onfocus="">
-			</div>		 
-		</form:form>	
+			</div>		 	
 		</div>
 		
 		<!-- Profesional -->
 		<div class="" id="divInputPro" style= "Display:none;">
 		
-			<form:form class="formulario" action="/crearUsurarioProfesional" method="post" modelAttribute="FormUsProf" id="FormUsProf">
 			<h3 class="centrar">DATOS DE PROFESIONAL</h3>
 					
 			<div class="">
@@ -124,12 +122,12 @@
 			<div class="">
 				 <input type="text" class="campos-form" id="proProyecto" name="proProyecto" placeholder="* Nombre del proyecto" onfocus="">
 			</div>
-			</form:form>
+		
 		</div>
 		
 		<!-- Administrativo -->
 		<div class="" id="divInputAdm" style= "Display:none;">
-      		<form:form class="formulario" action="/crearUsurarioAdministrativo" method="post" modelAttribute="FormUsAd" id="FormUsAd">
+      		
 			<h3>DATOS DE ADMINISTRATIVO</h3>
 		
 			<div class="">
@@ -139,7 +137,7 @@
 			<div class="">
 				 <input type="text" class="campos-form" id="adArea" name="adArea" placeholder="* Area administrativa" onfocus="">
 			</div>			 	 		
-			</form:form>
+			
 		</div>
 		
 		<!-- Boton -->
