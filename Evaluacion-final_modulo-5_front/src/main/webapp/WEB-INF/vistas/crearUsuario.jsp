@@ -148,22 +148,8 @@
 			<label for="" class=""> (*) Campos obligatorios</label>
 			<input class="submit" id="boton" type="submit" value="Enviar">		
 		</div>
-		
 		</form:form>
 
-
-
-		
-		
-			<!-- 
-		<div id="profesional" class="">
-		
-		</div>
-		 		
-		<div id="administrativo" class="">
-		
-		</div>
-		-->
 	
 	<!-- BootStrap -->
     <script
