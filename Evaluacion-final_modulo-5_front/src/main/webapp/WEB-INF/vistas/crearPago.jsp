@@ -38,14 +38,14 @@
         <h1>CREAR PAGO</h1></div>
 		
 		<!-- form -->
-		<form:form class="formulario" action="/pagos/crearPago" method="post" modelAttribute="formCrearPago" id="formPago">
+		<form:form class="formulario" action="/administrativo/crearPago" method="post" modelAttribute="formCrearPago" id="formPago">
 		
 		<div class="">
-			<input type="number" class="campos-form" id="PagMonto" name="pagMonto" placeholder="* Monto del pago">
+			<input type="number" class="campos-form" id="PagMonto" name="pagMonto" placeholder="* Monto del pago" required="required">
 		</div>
 		
 		<div class="">
-			 <select class="campos-form" id="PagMes" name="pagMes">
+			 <select class="campos-form" id="PagMes" name="pagMes" required="required">
 				<option selected disabled value="">* Mes del pago</option>
 					<option>Enero</option>
 					<option>Febrero</option>
@@ -63,15 +63,15 @@
 			</div>
 			
 			<div class="">
-				<input class="campos-form" type="number" id="PagAño" name="pagAño" placeholder="* Año del pago">
+				<input class="campos-form" type="number" id="PagAño" name="pagAnno" placeholder="* Año del pago" required="required">
 			</div>
 		
 			<div class="">
-				<input type="text" placeholder="* Rut Cliente" class="campos-form" id="pagRut" name="PagRut">
+				<input type="text" placeholder="* Rut Cliente" class="campos-form" id="pagRut" name="PagRut" required="required">
 			</div>
 	
 			<div class="">
-				 <input type="date" class="campos-form" id="PagFecha" name="pagFecha" placeholder="* Fecha actual" onfocus="(this.type='date')">
+				 <input type="date" class="campos-form" id="PagFecha" name="pagFecha" placeholder="* Fecha actual" onfocus="(this.type='date')" required="required">
 			</div>
 			
 			<br>

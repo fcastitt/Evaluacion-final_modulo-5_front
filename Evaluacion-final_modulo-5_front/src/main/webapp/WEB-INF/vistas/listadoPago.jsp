@@ -57,7 +57,7 @@
 	                <tr>
 	                    <td><c:out value="${listaPago.getPagMonto()}"></c:out></td>
 	                    <td><c:out value="${listaPago.getPagMes()}"></c:out></td>
-	                    <td><c:out value="${listaPago.getPagAño()}"></c:out></td>
+	                    <td><c:out value="${listaPago.getPagAnno()}"></c:out></td>
 	                    <td><c:out value="${listaPago.getPagRut()}"></c:out></td>
 	                    <td><c:out value="${listaPago.getPagFecha()}"></c:out></td>
                	 	</tr>
