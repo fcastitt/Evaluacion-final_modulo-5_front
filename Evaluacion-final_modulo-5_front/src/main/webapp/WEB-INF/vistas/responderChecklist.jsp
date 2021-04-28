@@ -34,14 +34,6 @@
       		<img src="https://evaluaciones.alineosoft.com/gentelella-master/production/images/logo-humanidea.png">
         	<jsp:include page="menu/menu.jsp"></jsp:include>
     	</div>
-    
-    	<!-- TITULO PAGINA -->
-    	<div class="centrar">
-        <h1>RESPONDER CHECKLIST</h1></div>
-
-		<!-- TABLA -->
-    	<div class="container">
-        <table id="responderCheck" class="table table-striped table-bordered" style="width:100%">
             
           	<!-- TITULO PAGINA -->
     	<div class="centrar">
